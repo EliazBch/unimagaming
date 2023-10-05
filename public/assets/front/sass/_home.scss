@@ -1,0 +1,174 @@
+.container-home{
+    .banner {
+    background-image: url("/unima-gaming/public/assets/front/img/unima-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height:400px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .title-home{
+    width:300px;
+    background-color:#D55203;
+    position:absolute;
+    padding-left:10px;
+    }
+    h1{
+        font-family:Oswald;
+        font-weight:bold;
+        color:#fff;
+    }
+    .orange{
+        color:#D55203;
+        font-weight:bold;
+    }
+    h2{
+        font-family:Oswald;
+        font-size:32px;
+        margin-right:20px;
+        margin-left:20px;
+        font-weight:bold;
+    }
+    p{
+        font-family:Montserrat;
+        font-size:24px;
+        margin-right:20px;
+        margin-left:20px;
+        text-align: initial;
+    }
+    .bs{
+        object-fit:cover;
+        border-radius:30px;
+    }
+    .bloc-bs{
+        background-color:#F9E8DC;
+        height: 580px;
+    }
+    ul li{
+        font-family:montserrat;
+        font-size:24px;
+        margin-right:20px;
+        margin-left:20px;
+        padding-bottom:20px;
+    }
+    .bloc-marche{
+        background-color:#F9E8DC;
+        height: 320px;
+    }
+    .img-bs{
+        text-align:center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container-home{
+    .title-home{
+    width:800px;
+    text-align:center;
+    }
+    h1{
+        font-family:Oswald;
+        font-weight:bold;
+        color:#fff;
+    }
+    .orange{
+        color:#D55203;
+        font-weight:bold;
+    }
+    h2{
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+    p{
+        margin-right: 20px;
+        margin-left: 60px;
+    }
+    .flex-bs{
+        display: flex;
+        flex-direction: column;
+    }
+    .bloc-bs{
+        height: 400px;
+    }
+    .bs{
+        margin-right: 20px;
+    }
+    .img-bs{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        text-align: inherit;
+    }
+    ul li{
+        padding-bottom:40px;
+    }
+    .bloc-marche{
+        height: 270px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container-home{
+    .orange{
+        color:#D55203;
+        font-weight:bold;
+    }
+    h2{
+        margin-right: 100px;
+    }
+    p{
+        margin-right: 100px;
+    }
+    .flex-bs{
+        display: flex;
+        flex-direction: column;
+    }
+    .bs{
+        margin-right: 64px;
+    }
+    .img-bs{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        text-align: inherit;
+    }
+    ul li{
+        padding-bottom:40px;
+    }
+    .bloc-marche{
+        height: 270px;
+    }
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

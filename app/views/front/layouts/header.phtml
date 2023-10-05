@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unima Gaming est une association fondée en 2020 par un regroupement de joueurs et d'amis ayant pour but de proposer des services communautaires aux joueurs grand public de jeux-vidéo. ">
+    <meta name="author" content="Unima Gaming">
+    <title>Unima Gaming</title>
+    <link rel="icon" type="image/x-icon" href="/unima-gaming/public/assets/front/img/logounimasite.jpg">
+    <link rel="stylesheet" type="text/css" href="/unima-gaming/public/assets/front/sass/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+ <!-- Navigation-->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img class="logo" width="60" height="60" src="/unima-gaming/public/assets/front/img/logounimasite.jpg" alt="Logo unima gaming">
+            <label class="logo1">Unima Gaming</label>
+        </div>
+        <div class="navlinks">
+            <ul>
+                 <li><a href="<?= $base_uri[0] ?>/public/home">Accueil</a></li>
+                 <li><a href="<?= $base_uri[0] ?>/public/mission">Missions</a></li>
+                 <li><a href="<?= $base_uri[0] ?>/public/classification">Classement</a></li>
+                 <?php if (!isset($_SESSION['user_id'])): ?>
+                 <li><a href="<?= $base_uri[0] ?>/public/login">Connexion</a></li>      
+                 <li><a href="<?= $base_uri[0] ?>/public/register">Inscription</a></li>
+                 <?php else: ?>
+                 <li><a href="<?= $base_uri[0] ?>/public/validation">Validation</a></li>
+                 <li><a href="<?= $base_uri[0] ?>/public/logout">Deconnexion</a></li>
+                 <?php endif; ?>
+            </ul>
+        </div>
+            <i class="fas fa-bars" style="color: #ffffff;"></i>
+    </nav>
+</header>

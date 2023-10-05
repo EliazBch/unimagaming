@@ -1,0 +1,468 @@
+/* General style */
+@font-face {
+  font-family: "Oswald";
+  src: url("../Oswald/Oswald-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Montserrat/Montserrat-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+/* Navigation */
+header {
+  width: 100%;
+  /* Responsive for Tablets */
+  /* Responsive for Desktops */
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  align-items: center;
+  height: 100px;
+}
+header .navbar .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+header .navbar .logo1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+  font-family: Oswald;
+  color: #fff;
+}
+header .navbar .fa-bars {
+  display: flex;
+  margin-right: 25px;
+  font-size: 25px;
+}
+header .navbar .navlinks {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  header .navbar .navlinks {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .navbar .fa-bars {
+    display: none;
+  }
+  header .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  header .navbar a {
+    color: #fff;
+    font-family: Oswald;
+    font-size: 20px;
+  }
+  header .navbar .navlinks {
+    display: flex;
+    align-items: center;
+  }
+  header .navbar .navlinks ul {
+    display: flex;
+  }
+  header .navbar ul li {
+    padding: 0 15px;
+    font-size: 0.9rem;
+    font-family: bold;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: #D55203;
+  padding-right: 10vw;
+  padding-left: 10vw;
+  text-align: center;
+}
+footer h1 {
+  font-size: 0.8rem;
+  color: #fff;
+}
+footer .icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .fab {
+  fill: #fff;
+  font-size: 50px;
+}
+
+.container-home .banner {
+  background-image: url("/unima-gaming/public/assets/front/img/unima-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-home .title-home {
+  width: 300px;
+  background-color: #D55203;
+  position: absolute;
+  padding-left: 10px;
+}
+.container-home h1 {
+  font-family: Oswald;
+  font-weight: bold;
+  color: #fff;
+}
+.container-home .orange {
+  color: #D55203;
+  font-weight: bold;
+}
+.container-home h2 {
+  font-family: Oswald;
+  font-size: 32px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.container-home p {
+  font-family: Montserrat;
+  font-size: 24px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: initial;
+}
+.container-home .bs {
+  object-fit: cover;
+  border-radius: 30px;
+}
+.container-home .bloc-bs {
+  background-color: #F9E8DC;
+  height: 580px;
+}
+.container-home ul li {
+  font-family: montserrat;
+  font-size: 24px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+.container-home .bloc-marche {
+  background-color: #F9E8DC;
+  height: 320px;
+}
+.container-home .img-bs {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-home .title-home {
+    width: 800px;
+    text-align: center;
+  }
+  .container-home h1 {
+    font-family: Oswald;
+    font-weight: bold;
+    color: #fff;
+  }
+  .container-home .orange {
+    color: #D55203;
+    font-weight: bold;
+  }
+  .container-home h2 {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .container-home p {
+    margin-right: 20px;
+    margin-left: 60px;
+  }
+  .container-home .flex-bs {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-home .bloc-bs {
+    height: 400px;
+  }
+  .container-home .bs {
+    margin-right: 20px;
+  }
+  .container-home .img-bs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: inherit;
+  }
+  .container-home ul li {
+    padding-bottom: 40px;
+  }
+  .container-home .bloc-marche {
+    height: 270px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1280px) {
+  .container-home .orange {
+    color: #D55203;
+    font-weight: bold;
+  }
+  .container-home h2 {
+    margin-right: 100px;
+  }
+  .container-home p {
+    margin-right: 100px;
+  }
+  .container-home .flex-bs {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-home .bs {
+    margin-right: 64px;
+  }
+  .container-home .img-bs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: inherit;
+  }
+  .container-home ul li {
+    padding-bottom: 40px;
+  }
+  .container-home .bloc-marche {
+    height: 270px;
+  }
+}
+.missionContainer h1 {
+  font-weight: bold;
+  color: #000000;
+  font-family: Oswald;
+  font-size: 32px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.missionContainer .orange {
+  color: #D55203;
+}
+.missionContainer .participerContainer {
+  background-color: #F9E8DC;
+}
+.missionContainer p {
+  margin-right: 5%;
+  margin-left: 5%;
+  font-family: montserrat;
+  font-size: 24px;
+  line-height: 30px;
+}
+.missionContainer #descriptionMission {
+  margin-left: 5%;
+}
+.missionContainer h2 {
+  color: #000000;
+  font-family: montserrat;
+  font-size: 24px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.missionContainer li {
+  font-family: montserrat;
+  font-size: 24px;
+  padding: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.login-container {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.login-container .login-container-block {
+  background-color: #0F0404;
+  width: 100%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.login-container .login-container-block .user {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.login-container .login-container-block .img-login {
+  width: 100%;
+  object-fit: cover;
+}
+.login-container .login-container-block h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: Oswald;
+}
+.login-container .login-container-block .email-form, .login-container .login-container-block .pass-form {
+  background-color: #fff;
+  color: #3E3E3E;
+  padding: 10px;
+  margin-bottom: 25px;
+  font-family: Oswald;
+}
+.login-container .login-container-block .login-btn {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 30px;
+  font-family: Oswald;
+  font-weight: bold;
+  color: #3E3E3E;
+}
+.login-container .login-container-block .login-form {
+  height: 240px;
+  background-color: #0F0404;
+}
+
+@media (min-width: 1024px) {
+  .login-container .login-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .login-container .img-login {
+    width: 100%;
+  }
+  .login-container .user {
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 1%;
+  }
+}
+@media (min-width: 1280px) {
+  .login-container .login-container-block {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+  }
+  .login-container .img-login {
+    object-fit: cover;
+    height: 300px;
+  }
+  .login-container .login-form {
+    width: 100%;
+  }
+  .login-container .login-container-block .user {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+  }
+  .login-container .login-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.register-container {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.register-container .register-container-block {
+  background-color: #000;
+  width: 100%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.register-container .register-container-block .user-register {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.register-container .register-container-block .img-register {
+  width: 100%;
+  object-fit: cover;
+}
+.register-container .register-container-block h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: oswald;
+}
+.register-container .register-container-block .name-form, .register-container .register-container-block .email-form, .register-container .register-container-block .pass-form {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-family: oswald;
+  font-weight: bold;
+}
+.register-container .register-container-block .register-btn {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 30px;
+  color: #3E3E3E;
+}
+.register-container .register-container-block .register-form {
+  height: 300px;
+  background-color: #000;
+}
+
+@media (min-width: 1024px) {
+  .register-container .register-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .register-container .register-login {
+    width: 100%;
+  }
+  .register-container .user-register {
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 1%;
+  }
+}
+@media (min-width: 1280px) {
+  .register-container .register-container-block {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+  }
+  .register-container .img-register {
+    object-fit: cover;
+    height: 300px;
+  }
+  .register-container .register-form {
+    width: 100%;
+  }
+  .register-container .register-container-block .user {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+  }
+  .register-container .register-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,72 @@
+<div class="missionContainer">
+    <div class="missionBrawlstars">
+        <h1>Missions Brawl Stars</h1>
+        <p>Bienvenue dans la section <span class="orange">Missions Brawl Stars</span> de notre site ! Nous avons créé ces missions pour vous offrir des défis amusants et excitants à relever dans le monde de <span class="orange">Brawl Stars</span>. 
+           Chaque mission vous permettra de tester vos compétences, de gagner des récompenses et de vous amuser encore plus en jouant à votre jeu préféré.</p>
+    </div>
+    <div class="listMission">
+        <h1>Liste des Missions :</h1>
+        <input class="list" type="text" id="descriptionMission" placeholder="Description de la mission">
+        <button onclick="ajouterMission()">Ajouter Mission</button>
+        <ul id="listeMissions">
+            <!-- Les missions existantes seront ajoutées ici -->
+        </ul>
+    </div>
+    <div class="participerContainer">
+        <h1>Comment participer :</h1>
+        <p>Pour participer à nos missions <span class="orange">Brawl Stars</span>, suivez ces étapes simples :</p>
+        <ul>
+            <li>1. Inscrivez-vous sur notre site (si ce n'est pas déjà fait).</li>
+            <li>2. Choisissez une mission parmi celles disponibles.</li>
+            <li>3. Jouez à <span class="orange">Brawl Stars</span> et atteignez l'objectif de la mission que vous avez sélectionnée.</li>
+            <li>4. Soumettez une preuve de votre réussite (captures d'écran).</li>
+            <li>5. Un admin vous répondra dans les plus brefs délais.</li>
+        </ul>
+    </div>
+    <div class="rules">
+        <h1>Règles</h1>
+        <ol>
+            <li>- Chaque mission a ses <span class="orange">propres règles</span> et <span class="orange">critères d'achèvement</span>. Assurez-vous de les suivre attentivement.</li>
+            <li>- Toute tricherie ou tentative de triche entraînera la disqualification et un ban permanent du site.</li>
+            <li>- Vous pouvez faire autant de mission que vous voulez.</li>
+        </ol>
+    </div>
+    <div class="finPage">
+        <p>Nous espérons que ces missions ajouteront une nouvelle dimension passionnante à votre expérience Brawl Stars. 
+           Préparez-vous à relever des défis et à remporter des récompenses exclusives ! Amusez-vous bien !</p>
+    </div>
+</div>
+
+<script>
+function ajouterMission() {
+  // Récupérer la zone de texte contenant la description de la mission
+  var descriptionMission = document.getElementById("descriptionMission").value;
+
+  if (descriptionMission.trim() !== "") {
+    // Créer un nouvel élément de liste <li>
+    var nouvelleMission = document.createElement("li");
+
+    // Ajouter la description de la mission en tant que texte de l'élément <li>
+    nouvelleMission.appendChild(document.createTextNode(descriptionMission));
+
+    // Créer un bouton "Supprimer"
+    var boutonSupprimer = document.createElement("button");
+    boutonSupprimer.appendChild(document.createTextNode("Supprimer"));
+    boutonSupprimer.addEventListener("click", function() {
+      // Supprimer la mission lorsque le bouton "Supprimer" est cliqué
+      listeMissions.removeChild(nouvelleMission);
+    });
+
+    // Ajouter le bouton "Supprimer" à côté de la mission
+    nouvelleMission.appendChild(boutonSupprimer);
+
+    // Ajouter la nouvelle mission à la liste des missions existantes
+    var listeMissions = document.getElementById("listeMissions");
+    listeMissions.appendChild(nouvelleMission);
+
+    // Effacer le contenu de la zone de texte après l'ajout
+    document.getElementById("descriptionMission").value = "";
+  }
+}
+</script>
+

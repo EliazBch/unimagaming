@@ -1,0 +1,95 @@
+.login-container {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+    .login-container-block{
+        background-color:#0F0404;
+        width:100%;
+        margin-right:20%;
+        margin-left:20%;
+    .user{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .img-login{
+        width:100%;
+        object-fit:cover;
+    }
+    h1{
+        color:#fff;
+        font-size:1.8rem;
+        font-family:Oswald;
+    }
+    .email-form, .pass-form {
+      background-color: #fff;
+      color: #3E3E3E;
+      padding: 10px;
+      margin-bottom: 25px;
+      font-family:Oswald;
+    }
+    .login-btn{
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: #fff;
+        border-radius: 30px;
+        height: 30px;
+        font-family:Oswald;
+        font-weight:bold;
+        color: #3E3E3E;
+    }
+    .login-form{
+        height: 240px;
+        background-color: #0F0404;
+    }
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-container {
+        .login-btn {
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        .img-login {
+            width: 100%;
+        }
+        .user {
+            padding-right: 15%;
+            padding-left: 15%;
+            padding-top: 1%;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .login-container {
+        .login-container-block {
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+        }
+        .img-login {
+            object-fit: cover;
+            height: 300px;
+        }
+        .login-form {
+            width: 100%;
+        }
+        .login-container-block .user {
+            padding-right: 10%;
+            padding-left: 10%;
+            padding-top: 5%;
+        }
+        .login-btn {
+            margin-left: auto; 
+            margin-right: auto;
+        }
+    }
+}
